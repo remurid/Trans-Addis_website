@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+bracketweb.com	TRUE	/jetlywp/	FALSE	1999999999	woocommerce_items_in_cart	1
+bracketweb.com	TRUE	/jetlywp/	FALSE	1999999999	wp_woocommerce_session_3a83e3c6efda99b4d0766f16a42705ff	t_d409160cb67217cf0b9bdeb29600e3%7C%7C1742473706%7C%7C1742470106%7C%7C522258c723db4dde99207768e3fd46e6
+bracketweb.com	TRUE	/jetlywp/	FALSE	1999999999	yith_wcwl_session_3a83e3c6efda99b4d0766f16a42705ff	%7B%22session_id%22%3A%22d8c24392a750f1ba675d05ce94124573%22%2C%22session_expiration%22%3A1744893444%2C%22session_expiring%22%3A1744889844%2C%22cookie_hash%22%3A%22b37971dcf97e0fbc00d2023b6d0e4dc6%22%7D
+bracketweb.com	TRUE	/jetlywp/	FALSE	1999999999	woocommerce_cart_hash	3ddf29063e49a84242edece4c79c85f5
+
