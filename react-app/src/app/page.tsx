@@ -157,16 +157,21 @@ export default function Home() {
                         <div className="swiper-wrapper">
                           <div className="swiper-slide">
                             <div className="image-layer-three" style={{backgroundImage: "url(/uploads/2023/01/cloud-1.png)"}}></div>
-                            <div className="main-slider-three__img wow zoomIn" data-wow-delay="200ms">
+                            {/* <div className="main-slider-three__img wow zoomIn" data-wow-delay="200ms"> */}
+                            {/* <div className="main-slider-three__img wow animate__animated animate__zoomIn" data-wow-delay="200ms"> */}
+                            
+                            <div className="main-slider-three__img">
+                              <div className="wow animate__animated animate__zoomIn" data-wow-delay="200ms" >
                               <img src="/uploads/2023/01/main-slider-three-img-1.png" alt="main-slider-three-img-1" className="float-bob-y" />
+                              </div>
                             </div>
                             <div className="container">
                               <div className="row">
                                 <div className="col-xl-6">
                                   <div className="main-slider-three__content">
-                                    <p className="main-slider-three__sub-title wow fadeInUp" data-wow-delay="100ms">Private Jets Charters</p>
-                                    <h2 className="main-slider-three__title wow fadeInUp" data-wow-delay="300ms">Save Time &amp; <br /> Fly with Comfort</h2>
-                                    <div className="main-slider-three__btn-box wow fadeInUp" data-wow-delay="500ms">
+                                    <p className="main-slider-three__sub-title wow animate__animated animate__fadeInUp" data-wow-delay="100ms">Private Jets Charters</p>
+                                    <h2 className="main-slider-three__title wow animate__animated animate__fadeInUp" data-wow-delay="300ms">Save Time &amp; <br /> Fly with Comfort</h2>
+                                    <div className="main-slider-three__btn-box wow animate__animated animate__fadeInUp" data-wow-delay="500ms">
                                       <a href="/booking" className="thm-btn main-slider__btn">Book Now</a>
                                       <a href="/contact-us" className="thm-btn main-slider__btn-two">Read More</a>
                                     </div>

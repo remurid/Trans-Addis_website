@@ -1,3 +1,5 @@
 /cdnjs.cloudflare.com
 /hts-catch
 /bracketweb.com/jetlywp/wishlist
+node_modules/
+.next/

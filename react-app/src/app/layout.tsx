@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "../styles/style.css";
+import 'animate.css/animate.min.css';
+
 
 export const metadata: Metadata = {
   title: "Trans Nation Airways",

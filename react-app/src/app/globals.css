@@ -17,6 +17,57 @@ body {
   padding: 0;
 }
 
+/* Remove underline from menu links */
+.menu-onepage-menu-two-container .main-menu__list li a {
+  text-decoration: none !important;
+}
+
+/* 1. ANIMATION SETTINGS */
+.animate__animated {
+  /* Ensures the element stays visible (opacity: 1) after animation ends */
+  animation-fill-mode: both; 
+  animation-duration: 1.2s;
+}
+
+/* 2. POSITIONING CONTAINER */
+.main-slider-three__img {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  /* This centers the container. 
+     Since the animation is now on a CHILD element, this transform won't be overwritten. */
+  transform: translateY(-50%); 
+  z-index: 5;
+  width: 900px; /* Define width here to ensure container has size */
+  max-width: 100%;
+  pointer-events: none; /* Good practice so the big image doesn't block clicks on text */
+}
+
+/* 3. THE IMAGE ITSELF */
+.main-slider-three__img img {
+  width: 100%; /* Fill the 900px container */
+  height: auto;
+  display: block;
+}
+
+/* 4. BACKGROUND CLOUD LAYER */
+.image-layer-three {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 5. SLIDER STRUCTURE */
+.main-slider-three, .swiper-slide {
+  position: relative;
+  overflow: hidden; /* Prevents scrollbars if plane enters from outside */
+}
+
+
+
+
 /* Hide default cursor when custom cursor is active */
 .custom-cursor {
   cursor: none !important;
@@ -29,7 +80,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Custom animations */
 .float-bob-x {
   animation: float-bob-x 3s ease-in-out infinite;
 }
@@ -40,6 +90,19 @@ body {
   }
   50% {
     transform: translateX(10px);
+  }
+}
+
+.float-bob-y {
+  animation: float-bob-y 3s ease-in-out infinite;
+}
+
+@keyframes float-bob-y {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 
@@ -93,3 +156,4 @@ body {
 .custom-cursor__innerhover .custom-cursor__cursor-two {
   transform: scale(1.5);
 }
+ 
