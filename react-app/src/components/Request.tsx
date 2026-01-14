@@ -109,24 +109,25 @@ const Request: React.FC<RequestProps> = ({ shape1, shape2 }) => {
                   </div>
                 </div>
               </li>
-              <li>
+              {/* Passengers */}
+                <li>
                 <div className="request__input-box">
                   <div className="select-box">
-                    <select
-                      className="wpcf7-form-control wpcf7-select nice-select wide"
-                      value={formData.passengers}
-                      name="passengers"
-                      onChange={handleChange}
-                    >
-                      <option data-display="Passengers">Passengers</option>
-                      <option value="1">Passengers 01</option>
-                      <option value="2">Passengers 02</option>
-                      <option value="3">Passengers 03</option>
-                      <option value="4">Passengers 04</option>
-                    </select>
+                  <select
+                    className="wpcf7-form-control wpcf7-select nice-select wide !w-full !h-[52px] !border-0 !rounded !px-4 !appearance-none bg-green"
+                    value={formData.passengers}
+                    name="passengers"
+                    onChange={handleChange}
+                  >
+                    <option value="" disabled>Passengers</option>
+                    <option value="1">1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                  </select>
                   </div>
                 </div>
-              </li>
+                </li>
             </ul>
             <div className="request__bottom">
               <p className="request__bottom-text">
