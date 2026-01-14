@@ -17,57 +17,20 @@ body {
   padding: 0;
 }
 
-/* Remove underline from menu links */
-.menu-onepage-menu-two-container .main-menu__list li a {
-  text-decoration: none !important;
-}
 
-/* 1. ANIMATION SETTINGS */
-.animate__animated {
-  /* Ensures the element stays visible (opacity: 1) after animation ends */
-  animation-fill-mode: both; 
-  animation-duration: 1.2s;
-}
 
-/* 2. POSITIONING CONTAINER */
+/* 1. POSITIONING CONTAINER */
 .main-slider-three__img {
   position: absolute;
   top: 50%;
   right: -50px;
-  /* This centers the container. 
-     Since the animation is now on a CHILD element, this transform won't be overwritten. */
+  /* Keep vertical centering here on the PARENT */
   transform: translateY(-50%); 
   z-index: 5;
-  width: 900px; /* Define width here to ensure container has size */
+  width: 900px;
   max-width: 100%;
-  pointer-events: none; /* Good practice so the big image doesn't block clicks on text */
+  pointer-events: none;
 }
-
-/* 3. THE IMAGE ITSELF */
-.main-slider-three__img img {
-  width: 100%; /* Fill the 900px container */
-  height: auto;
-  display: block;
-}
-
-/* 4. BACKGROUND CLOUD LAYER */
-.image-layer-three {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background-size: cover;
-  background-position: center;
-}
-
-/* 5. SLIDER STRUCTURE */
-.main-slider-three, .swiper-slide {
-  position: relative;
-  overflow: hidden; /* Prevents scrollbars if plane enters from outside */
-}
-
-
-
-
 /* Hide default cursor when custom cursor is active */
 .custom-cursor {
   cursor: none !important;
@@ -93,18 +56,18 @@ body {
   }
 }
 
-.float-bob-y {
+/* .float-bob-y {
   animation: float-bob-y 3s ease-in-out infinite;
-}
+} */
 
-@keyframes float-bob-y {
+/* @keyframes float-bob-y {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-10px);
   }
-}
+} */
 
 .zoom-fade-2 {
   animation: zoom-fade-2 4s ease-in-out infinite;
@@ -157,3 +120,86 @@ body {
   transform: scale(1.5);
 }
  
+
+
+/*  */
+/* Neutralize WOW.js for the Hero Slider so Framer Motion can work */
+/* .main-slider-three .wow {
+  visibility: visible !important;
+  animation-name: none !important;
+} */
+
+/* Ensure the Plane container is actually visible and positioned */
+.main-slider-three__img {
+  position: absolute;
+  top: 61%;
+  right: 5%; /* Adjust this to move the plane left/right */
+  transform: translateY(-50%) !important;
+  width: 600px; /* Start with a smaller width to ensure it fits */
+  z-index: 10;
+  display: block !important;
+  opacity: 1 !important;
+}
+
+/* Fix for WordPress/Elementor inherited styles that might hide content */
+.main-slider-three__content, 
+.main-slider-three__sub-title, 
+.main-slider-three__title,
+.main-slider-three__btn-box {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* End of globals.css */
+/* Kill WOW animations – very important */
+.main-slider-three .wow,
+.main-slider-three [data-wow] {
+  visibility: visible !important;
+  animation: none !important;
+}
+
+/* Plane container */
+
+
+.main-slider-three__img {
+  position: absolute !important;
+  bottom: 5% !important;          /* keep plane near bottom */
+  right: 0 !important;
+  z-index: 60;
+  width: 55% !important;          /* responsive width */
+  max-width: 1000px;
+}
+
+/* Text – override any inherited Elementor centering */
+
+.main-slider-three__title {
+  font-size: clamp(3.2rem, 6vw, 5.2rem);
+  line-height: 1.15;
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+}
+
+.main-slider-three__sub-title {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  color: #fff; /* ← adjust if needed */
+}
+
+a {
+  text-decoration: none !important;
+}
+
+@media (max-width: 992px) {
+  .main-slider-three__img {
+    bottom: 8%;
+    width: 70%;
+    max-width: none;
+  }
+  
+  .main-slider-three__content {
+    padding-left: 6vw;
+    max-width: 90%;
+  }
+}

@@ -2419,7 +2419,7 @@ textarea {
 	}
 }
 
-.float-bob-y {
+/* .float-bob-y {
 	-webkit-animation-name: float-bob-y;
 	animation-name: float-bob-y;
 	-webkit-animation-duration: 2s;
@@ -2428,7 +2428,7 @@ textarea {
 	animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-}
+} */
 
 @-webkit-keyframes float-bob-x {
 	0% {
@@ -3152,7 +3152,7 @@ textarea {
 	}
 }
 
-.float-bob-y {
+/* .float-bob-y {
 	-webkit-animation-name: float-bob-y;
 	animation-name: float-bob-y;
 	-webkit-animation-duration: 2s;
@@ -3161,7 +3161,7 @@ textarea {
 	animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-}
+} */
 
 @-webkit-keyframes footerTree {
 

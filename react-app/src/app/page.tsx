@@ -8,6 +8,8 @@ import Counter from '@/components/Counter';
 import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
 import ClientScripts from '@/components/ClientScripts';
+import { motion } from 'framer-motion';
+import HeroSlider from '@/components/HeroSlider';
 
 export default function Home() {
   const menuItems = [
@@ -134,6 +136,35 @@ export default function Home() {
     { icon: 'fa-map-marker', text: '30 broklyn golden street. New York' },
   ];
 
+  const planeAnimation = {
+    // Start state: Off-screen to the left, slightly invisible
+    hidden: { 
+      x: -200, 
+      opacity: 0, 
+      y: 0 
+    },
+    // End state: In position, fully visible
+    visible: { 
+      x: 0, 
+      opacity: 1,
+      transition: { 
+        duration: 1.5, 
+        ease: "easeOut" // Smooth landing
+      }
+    },
+    // The "Bobbing" effect (happens continuously)
+    float: {
+      y: [0, -20, 0], // Move up 20px, then back down
+      transition: {
+        duration: 3,
+        repeat: Infinity, // Loop forever
+        repeatType: "mirror",
+        ease: "easeInOut",
+        delay: 1.5 // Wait for the entrance to finish before bobbing
+      }
+    }
+  };
+
   return (
     <div id="page" className="site page-wrapper">
       <ClientScripts />
@@ -146,56 +177,21 @@ export default function Home() {
       />
       <main>
         {/* Hero Section */}
-        <section className="elementor-section elementor-top-section elementor-element elementor-element-e64a631 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="e64a631" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+        {/* Hero Section Wrapper */}
+      <section className="elementor-section elementor-top-section elementor-element elementor-element-e64a631 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="e64a631" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
           <div className="elementor-container elementor-column-gap-no">
             <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3d2fb4b" data-id="3d2fb4b" data-element_type="column">
               <div className="elementor-widget-wrap elementor-element-populated">
                 <div className="elementor-element elementor-element-0d9f918 elementor-widget elementor-widget-jetly-main-slider" data-id="0d9f918" data-element_type="widget" data-widget_type="jetly-main-slider.default">
-                  <div className="elementor-widget-container">
-                    <section className="main-slider-three clearfix">
-                      <div className="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "allowTouchMove": false, "loop": false, "effect": "fade", "pagination": {"el": "#main-slider-pagination", "type": "bullets", "clickable": true}, "navigation": {"nextEl": "#main-slider__swiper-button-next", "prevEl": "#main-slider__swiper-button-prev"}}'>
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
-                            <div className="image-layer-three" style={{backgroundImage: "url(/uploads/2023/01/cloud-1.png)"}}></div>
-                            {/* <div className="main-slider-three__img wow zoomIn" data-wow-delay="200ms"> */}
-                            {/* <div className="main-slider-three__img wow animate__animated animate__zoomIn" data-wow-delay="200ms"> */}
-                            
-                            <div className="main-slider-three__img">
-                              <div className="wow animate__animated animate__zoomIn" data-wow-delay="200ms" >
-                              <img src="/uploads/2023/01/main-slider-three-img-1.png" alt="main-slider-three-img-1" className="float-bob-y" />
-                              </div>
-                            </div>
-                            <div className="container">
-                              <div className="row">
-                                <div className="col-xl-6">
-                                  <div className="main-slider-three__content">
-                                    <p className="main-slider-three__sub-title wow animate__animated animate__fadeInUp" data-wow-delay="100ms">Private Jets Charters</p>
-                                    <h2 className="main-slider-three__title wow animate__animated animate__fadeInUp" data-wow-delay="300ms">Save Time &amp; <br /> Fly with Comfort</h2>
-                                    <div className="main-slider-three__btn-box wow animate__animated animate__fadeInUp" data-wow-delay="500ms">
-                                      <a href="/booking" className="thm-btn main-slider__btn">Book Now</a>
-                                      <a href="/contact-us" className="thm-btn main-slider__btn-two">Read More</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* If we need pagination */}
-                        <div className="swiper-pagination" id="main-slider-pagination"></div>
-                        {/* If we need navigation buttons */}
-                        <div className="main-slider__nav">
-                          <div className="swiper-button-prev" id="main-slider__swiper-button-prev"></div>
-                          <div className="swiper-button-next" id="main-slider__swiper-button-next"></div>
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </div>
+                
+                {/* HERE IS THE NEW COMPONENT */}
+                <HeroSlider />
+
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Request Section */}
         <Request
