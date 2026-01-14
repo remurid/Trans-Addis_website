@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 
 interface RequestProps {
   shape1: string;
@@ -11,8 +13,8 @@ const Request: React.FC<RequestProps> = ({ shape1, shape2 }) => {
   const [formData, setFormData] = useState({
     flyFrom: '',
     flyTo: '',
-    date: '',
-    time: '',
+    date: null as Date | null,
+    time: null as Date | null,
     passengers: '',
   });
 
@@ -67,34 +69,44 @@ const Request: React.FC<RequestProps> = ({ shape1, shape2 }) => {
                   />
                 </div>
               </li>
+              {/* Date Picker */}
               <li>
-                <div className="request__input-box">
-                  <input
-                    size={40}
-                    className="wpcf7-form-control wpcf7-text"
-                    id="datepicker"
-                    placeholder="Select date"
-                    value={formData.date}
-                    name="date"
-                    onChange={handleChange}
-                    type="text"
+                <div className="request__input-box relative">
+                  <DatePicker
+                    selected={formData.date}
+                    onChange={(date: Date | null) => setFormData({ ...formData, date })}
+                    dateFormat="yyyy-MM-dd"
+                    placeholderText="Select date"
+                    className="wpcf7-form-control wpcf7-text !w-full"
+                    wrapperClassName="w-full"
+                    calendarClassName="custom-datepicker"
+                    showPopperArrow={false}
                   />
-                  <div className="get-flight__icon-box">
-                    <i className="far fa-calendar-alt"></i>
+                  <div className="get-flight__icon-box absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <i className="far fa-calendar-alt text-gray-500"></i>
                   </div>
                 </div>
               </li>
+              {/* Time Picker */}
               <li>
-                <div className="request__input-box">
-                  <input
-                    size={40}
-                    className="wpcf7-form-control wpcf7-text time-picker"
-                    placeholder="Select time"
-                    value={formData.time}
-                    name="time"
-                    onChange={handleChange}
-                    type="text"
+                <div className="request__input-box relative">
+                  <DatePicker
+                    selected={formData.time}
+                    onChange={(time: Date | null) => setFormData({ ...formData, time })}
+                    showTimeSelect
+                    showTimeSelectOnly
+                    timeIntervals={15}
+                    timeCaption="Time"
+                    dateFormat="h:mm aa"
+                    placeholderText="Select time"
+                    className="wpcf7-form-control wpcf7-text !w-full"
+                    wrapperClassName="w-full"
+                    calendarClassName="custom-datepicker"
+                    showPopperArrow={false}
                   />
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <i className="far fa-clock text-gray-500"></i>
+                  </div>
                 </div>
               </li>
               <li>

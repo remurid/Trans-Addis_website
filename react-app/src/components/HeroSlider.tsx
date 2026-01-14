@@ -48,12 +48,12 @@ const HeroSlider = () => {
             inset: 0,
             zIndex: 2,
             backgroundSize: '120%',
-            opacity: 0.6,
+            opacity: 0.75,
             backgroundPosition: 'center',
             backgroundRepeat: 'repeat-x',
           }}
           transition={{
-            duration: 60,
+            duration: 12,
             repeat: Infinity,
             ease: 'linear',
           }}
@@ -68,7 +68,7 @@ const HeroSlider = () => {
             animate={{
               x: '-3vw',                            // ends close to text (adjust 8–15vw range)
               opacity: 1,
-              y: [0, -30, 0],                       // floating effect
+              y: [0, -35, 0],                       // floating effect
             }}
             transition={{
               x: { duration: 1.8, ease: [0.22, 1, 0.36, 1] }, // smooth, elegant glide
@@ -82,10 +82,10 @@ const HeroSlider = () => {
             }}
             style={{
               width: '100%',
-              maxWidth: '920px',                    // big & impressive
+              maxWidth: '950px',                    // big & impressive
               height: 'auto',
               display: 'block',
-              
+              opacity: 1,
             }}
           />
         </div>

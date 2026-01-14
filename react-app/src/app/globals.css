@@ -166,7 +166,7 @@ body {
   position: absolute !important;
   bottom: 5% !important;          /* keep plane near bottom */
   right: 0 !important;
-  z-index: 60;
+  z-index: 30 !important;
   width: 55% !important;          /* responsive width */
   max-width: 1000px;
 }
@@ -174,17 +174,18 @@ body {
 /* Text – override any inherited Elementor centering */
 
 .main-slider-three__title {
-  font-size: clamp(3.2rem, 6vw, 5.2rem);
+  /* font-size: clamp(3.2rem, 6vw, 5.2rem); */
+  font-size: clamp(2.9rem, 5.9vw, 4.9rem) !important;
   line-height: 1.15;
   margin-bottom: 1.4rem;
-  font-weight: 700;
+  font-weight: 500 !important;
 }
 
 .main-slider-three__sub-title {
-  font-size: 1.35rem;
+  font-size: 1.15rem !important;
   font-weight: 500;
   margin-bottom: 0.8rem;
-  color: #fff; /* ← adjust if needed */
+  color: #a79132; /* ← adjust if needed */
 }
 
 a {
@@ -202,4 +203,10 @@ a {
     padding-left: 6vw;
     max-width: 90%;
   }
+}
+
+/*  */
+/*  */
+.request__bottom {
+  margin-right: 110px !important;
 }
