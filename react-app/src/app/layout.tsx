@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "../styles/style.css";
 import 'animate.css/animate.min.css';
+import CustomCursor from "@/components/CustomCursor";
 
 
 export const metadata: Metadata = {
@@ -24,8 +25,9 @@ export default function RootLayout({
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
       </head>
       <body
-        className="page-template page-template-elementor_header_footer page page-id-1359 theme-jetly jetly-addon woocommerce-no-js woocommerce-active elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-1359"
+        className="page-template custom-cursor page-template-elementor_header_footer page page-id-1359 theme-jetly jetly-addon woocommerce-no-js woocommerce-active elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-1359"
       >
+        <CustomCursor />
         {children}
       </body>
     </html>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Search, ShoppingCart } from "lucide-react";
 
@@ -39,6 +39,29 @@ const Header: React.FC<HeaderProps> = ({
 
   const toggleMobileNav = () => setIsMobileNavOpen(!isMobileNavOpen);
   const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
+
+  const [isSticky, setIsSticky] = useState(false);
+  const [showScroll, setShowScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      setIsSticky(scrollY > 50);
+      setShowScroll(scrollY > 125);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
@@ -86,7 +109,12 @@ const Header: React.FC<HeaderProps> = ({
             </div>
           </div>
         </div>
-        <nav className="main-menu main-menu-three">
+        {/* <nav className="main-menu main-menu-three"> */}
+        <nav
+          className={`main-menu main-menu-three ${
+            isSticky ? "stricky-fixed animated slideInDown" : ""
+          }`}
+        >
           <div className="main-menu-three__wrapper">
             <div className="main-menu-three__wrapper-inner">
               <div className="main-menu-three__left">
@@ -239,7 +267,24 @@ const Header: React.FC<HeaderProps> = ({
         </div>
       </div>
 
-      <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
+      {/* <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
+        <i className="fa fa-arrow-up"></i>
+      </a> */}
+      <a
+        href="#"
+        onClick={scrollToTop}
+        className={`scroll-to-target scroll-to-top ${
+          showScroll ? "visible" : ""
+        }`}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          opacity: showScroll ? 1 : 0,
+          visibility: showScroll ? "visible" : "hidden",
+          transition: "all 0.4s ease",
+        }}
+      >
         <i className="fa fa-arrow-up"></i>
       </a>
     </>

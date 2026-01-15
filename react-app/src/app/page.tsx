@@ -136,38 +136,11 @@ export default function Home() {
     { icon: 'fa-map-marker', text: '30 broklyn golden street. New York' },
   ];
 
-  const planeAnimation = {
-    // Start state: Off-screen to the left, slightly invisible
-    hidden: { 
-      x: -200, 
-      opacity: 0, 
-      y: 0 
-    },
-    // End state: In position, fully visible
-    visible: { 
-      x: 0, 
-      opacity: 1,
-      transition: { 
-        duration: 1.5, 
-        ease: "easeOut" // Smooth landing
-      }
-    },
-    // The "Bobbing" effect (happens continuously)
-    float: {
-      y: [0, -20, 0], // Move up 20px, then back down
-      transition: {
-        duration: 3,
-        repeat: Infinity, // Loop forever
-        repeatType: "mirror",
-        ease: "easeInOut",
-        delay: 1.5 // Wait for the entrance to finish before bobbing
-      }
-    }
-  };
+  
 
   return (
     <div id="page" className="site page-wrapper">
-      <ClientScripts />
+      {/* <ClientScripts /> */}
       <div data-elementor-type="wp-post" data-elementor-id="1307" className="elementor elementor-1307">
         <Header
         logoSrc="/uploads/2023/01/logo-dark.png"
@@ -272,7 +245,7 @@ export default function Home() {
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}
-        copyrightText="© Copyright 2023 by"
+        copyrightText="© Copyright 2026 by"
         copyrightLink="#"
         socialLinks={socialLinks}
       />

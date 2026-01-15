@@ -213,3 +213,37 @@ a {
 .about-three{
   margin: 0px 150px 0px 150px !important;
 }
+
+
+
+/* Sticky Header Styles */
+.main-menu-three.stricky-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff; /* Match your header color */
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  margin-top: 0;
+}
+
+/* Optional: Smooth entry animation */
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}

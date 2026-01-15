@@ -35,8 +35,13 @@ const Footer: React.FC<FooterProps> = ({
   shape,
 }) => {
   return (
-    <footer className="site-footer">
-      <div className="site-footer__top">
+    <footer className="site-footer"
+    >
+      <div className="site-footer__top"
+      style={{
+    marginLeft: '50px', 
+    marginRight: '50px',
+  }}>
         <div className="container">
           <div className="row">
             <div className="col-xl-3 col-lg-6 col-md-6">
@@ -107,7 +112,11 @@ const Footer: React.FC<FooterProps> = ({
           </div>
         </div>
       </div>
-      <div className="site-footer__bottom">
+      <div className="site-footer__bottom"
+      style={{
+    marginLeft: '100px', 
+    marginRight: '100px',
+  }}>
         <div className="site-footer__bottom-inner">
           <div className="site-footer__bottom-left">
             <p className="site-footer__bottom-text">
