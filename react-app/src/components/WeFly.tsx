@@ -1,10 +1,11 @@
 import React from 'react';
+import AnimatedCounter from './AnimatedCounter';
 
 interface WeFlyProps {
   backgroundImage: string;
   badgeImage: string;
   title: string;
-  count: string;
+  count: number;
   text: string;
   button1Text: string;
   button1Href: string;
@@ -33,9 +34,18 @@ const WeFly: React.FC<WeFlyProps> = ({
         <div className="row">
           <div className="col-xl-7 col-lg-8">
             <div className="we-fly__left">
-              <h3 className="we-fly__title count-box">
+              {/* <h3 className="we-fly__title count-box">
                 {title} <span className="count-text we-fly__count" data-stop={count} data-speed="1500">0</span> destinations world wide
-              </h3>
+              </h3> */}
+              <h3 className="we-fly__title">
+            {title}{' '}
+            <AnimatedCounter 
+              end={count}
+              duration={1.5}        // matches your original data-speed="1500" → 1.5s
+              delay={0.3}           // small delay for better feel (optional)
+            />{' '}
+            destinations world wide
+          </h3>
               <p className="we-fly__text">{text}</p>
               <div className="we-fly__btn-boxes">
                 <div className="we-fly__btn-one-box">

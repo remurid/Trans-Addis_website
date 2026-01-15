@@ -219,7 +219,7 @@ export default function Home() {
           backgroundImage="/uploads/2023/01/we-fly-bg.jpg"
           badgeImage="/uploads/2023/01/we-fly-badge.png"
           title="We fly with you to over"
-          count="6800"
+          count={6800}
           text="Curly Airline proudly raises the bar and exceeds the standard for luxury and corporate private jet charter services."
           button1Text="Book Now"
           button1Href="/booking"

@@ -56,17 +56,19 @@ const Newsletter: React.FC<NewsletterProps> = ({
                     type="email"
                     placeholder={placeholder}
                     name="EMAIL"
+                    required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
-                  <button type="submit" className="newsletter__btn">
+                  
+                </div>
+                <button type="submit" className="newsletter__btn">
                     {buttonText}
                     <i aria-hidden="true" className="fas fa-plane"></i>
                   </button>
-                </div>
               </form>
               <div className="mc-form__response"></div>
-              <div className="checked-box">
+              {/* <div className="checked-box">
                 <input
                   type="checkbox"
                   name="skipper1"
@@ -78,7 +80,7 @@ const Newsletter: React.FC<NewsletterProps> = ({
                   <span></span>
                   {policyText}
                 </label>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
