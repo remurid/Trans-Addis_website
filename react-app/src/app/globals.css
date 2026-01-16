@@ -247,3 +247,63 @@ a {
 .slideInDown {
   animation-name: slideInDown;
 }
+
+/*  */
+/* --- HOME PAGE HEADER (White) --- */
+.main-header-three--home {
+    background-color: #ffffff;
+}
+.main-header-three--home .main-menu__list li a {
+    color: #171717; /* Dark text for home */
+}
+.main-header-three--home .main-header-three__contact-list li .text p,
+.main-header-three--home .main-header-three__contact-list li .text a {
+    color: #171717;
+}
+
+/* --- INNER PAGES HEADER (Transparent) --- */
+.main-header-three--inner {
+    background: transparent !important;
+    position: absolute !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main-header-three--inner .main-menu__list li a {
+    color: #ffffff !important; /* White text for transparent header */
+}
+
+.main-header-three--inner .main-header-three__contact-list li .text p,
+.main-header-three--inner .main-header-three__contact-list li .text a,
+.main-header-three--inner .main-header-three__social a {
+    color: #ffffff !important;
+}
+
+/* --- STICKY HEADER (Always White) --- */
+/* When scrolling, the header should always turn white so text is readable */
+.main-menu-three.stricky-fixed {
+    background-color: #ffffff !important;
+}
+.main-menu-three.stricky-fixed .main-menu__list li a {
+    color: #171717 !important;
+}
+
+/*  */
+/* Ensure the active link is visible on both home and inner pages */
+.main-menu__list li.current-menu-item > a {
+    color: var(--jetly-base) !important; /* Gold color */
+    font-weight: 700;
+}
+
+/* If you want the "Home" bolding effect on other pages */
+.main-menu__list li.current-menu-item > a::before {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+.xx {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}

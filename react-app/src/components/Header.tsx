@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Search, ShoppingCart } from "lucide-react";
+import { usePathname } from "next/dist/client/components/navigation";
 
 interface MenuItem {
   label: string;
@@ -43,6 +44,13 @@ const Header: React.FC<HeaderProps> = ({
   const [isSticky, setIsSticky] = useState(false);
   const [showScroll, setShowScroll] = useState(false);
 
+  const pathname = usePathname();
+  const isHome = pathname === "/" || pathname === "";
+
+  const headerClass = isHome 
+    ? "main-header-three--home" 
+    : "main-header-three--inner";
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -63,9 +71,11 @@ const Header: React.FC<HeaderProps> = ({
     });
   };
 
+
   return (
     <>
-      <header className="main-header-three">
+      {/* <header className="main-header-three"> */}
+      <header className={`main-header-three ${headerClass}`}>
         <div className="main-header-three__top">
           <div className="main-header-three__top-inner">
             <div className="main-header-three__top-left">
@@ -144,7 +154,7 @@ const Header: React.FC<HeaderProps> = ({
                     id="menu-onepage-menu-two"
                     className="main-menu__list one-page-scroll-menu"
                   >
-                    {menuItems.map((item, index) => (
+                    {/* {menuItems.map((item, index) => (
                       <li
                         key={index}
                         className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-${
@@ -153,7 +163,21 @@ const Header: React.FC<HeaderProps> = ({
                       >
                         <Link href={item.href}>{item.label}</Link>
                       </li>
-                    ))}
+                    ))} */}
+                    {menuItems.map((item, index) => {
+                      const isActive = pathname === item.href;
+
+                      return (
+                        <li
+                          key={index}
+                          className={`menu-item ${
+                            isActive ? "current-menu-item" : ""
+                          }`}
+                        >
+                          <Link href={item.href}>{item.label}</Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </div>

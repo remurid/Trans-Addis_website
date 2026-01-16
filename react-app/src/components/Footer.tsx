@@ -91,17 +91,16 @@ const Footer: React.FC<FooterProps> = ({
                 </div>
                 <ul className="footer-widget__Contact-list list-unstyled ml-0">
                   {contactInfo.map((info, index) => (
-                    <li key={index}>
-                      <div className="icon">
+                    <li
+                      key={index}
+                      style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}
+                    >
+                      <div className="icon" style={{ minWidth: '28px', textAlign: 'center' }}>
                         <span aria-hidden="true" className={`fas ${info.icon}`}></span>
                       </div>
-                      <div className="text">
-                        <p>
-                          {info.href ? (
-                            <a href={info.href}>{info.text}</a>
-                          ) : (
-                            info.text
-                          )}
+                      <div className="text" style={{ flex: 1 }}>
+                        <p style={{ margin: 0 }}>
+                          {info.href ? <a href={info.href}>{info.text}</a> : info.text}
                         </p>
                       </div>
                     </li>
