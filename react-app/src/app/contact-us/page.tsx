@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ClientScripts from '@/components/ClientScripts';
+import Link from 'next/dist/client/link';
 
 export default function ContactUs() {
   const menuItems = [
@@ -53,23 +54,90 @@ export default function ContactUs() {
       />
 
       <main>
-        <section className="page-header page-header-bg">
-          <div className="main-slider-border"></div>
-          <div className="main-slider-border main-slider-border-two"></div>
-          <div className="main-slider-border main-slider-border-three"></div>
-          <div className="main-slider-border main-slider-border-four"></div>
-          <div className="main-slider-border main-slider-border-five"></div>
-          <div className="main-slider-border main-slider-border-six"></div>
-          <div className="container">
-            <div className="page-header__inner">
-              <h2>Contact Us</h2>
-              <ul className="thm-breadcrumb list-unstyled">
-                <li><a href="/">Home</a></li>
-                <li><span>Contact Us</span></li>
-              </ul>
+        <section className="page-header">
+            <div className="page-header-bg"></div>
+
+            {/* These borders are what make the Jetly theme look authentic */}
+            <div className="main-slider-border"></div>
+            <div className="main-slider-border main-slider-border-two"></div>
+            <div className="main-slider-border main-slider-border-three"></div>
+            <div className="main-slider-border main-slider-border-four"></div>
+            <div className="main-slider-border main-slider-border-five"></div>
+            <div className="main-slider-border main-slider-border-six"></div>
+
+            <div className="container">
+              <div className="page-header__inner">
+                <h2>Contact Us</h2>
+                <ul className="thm-breadcrumb list-unstyled">
+                  <div className="xx">
+                    <li>
+                      <Link href="/">Home</Link>
+                    </li>
+                    <li className="active">
+                      <span style={{ color: "var(--jetly-base)" }}>
+                        Contact Us
+                      </span>
+                    </li>
+                  </div>
+                </ul>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          <section className="contact-page">
+        <div className="container">
+                            <div className="section-title text-center">
+                                            <span className="section-title__tagline">Contact us
+</span>
+                                                                <h2 className="section-title__title">Feel free to get in touch <br></br> with the jetly</h2>
+                                    </div>
+                                        <div className="row">
+                        <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                            <div className="contact-page__single">
+                                <div className="contact-page__title-box">
+                                    <div className="contact-page__title">
+                                        <span>know</span>
+                                        <h3>About us</h3>
+                                    </div>
+                                    <div className="contact-page__icon icon-svg">
+                                        <span aria-hidden="true" className="   icon-flight-1"></span>                                    </div>
+                                </div>
+                                <p className="contact-page__text">Non augue egestas, commodo velit eget, tellus.</p>
+                            </div>
+                        </div>
+
+                        <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                            <div className="contact-page__single">
+                                <div className="contact-page__title-box">
+                                    <div className="contact-page__title">
+                                        <span>write</span>
+                                        <h3>Send email</h3>
+                                    </div>
+                                    <div className="contact-page__icon icon-svg">
+                                        <span aria-hidden="true" className="   icon-envelope-back"></span>                                    </div>
+                                </div>
+                                <p className="contact-page__text"> <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+<a href="mailto:info@comapny.com">info@comapny.com</a></p>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+                            <div className="contact-page__single">
+                                <div className="contact-page__title-box">
+                                    <div className="contact-page__title">
+                                        <span>book</span>
+                                        <h3>Call now</h3>
+                                    </div>
+                                    <div className="contact-page__icon icon-svg">
+                                        <span aria-hidden="true" className="   icon-call"></span>                                    </div>
+                                </div>
+                                <p className="contact-page__text"><a href="tel:9288006780">+92 ( 8800 ) - 6780</a>
+ <a href="tel:0066680900">+ 00 66680 900</a></p>
+                            </div>
+                        </div>
+
+                                    </div>
+                    </div>
+    </section>
 
         <section className="contact-one">
           <div className="container">
