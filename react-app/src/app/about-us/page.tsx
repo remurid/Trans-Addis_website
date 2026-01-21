@@ -64,7 +64,7 @@ export default function AboutUs() {
     { label: "Services", href: "/services" },
     { label: "Charters", href: "/charters" },
     { label: "Destinations", href: "/destinations" },
-    { label: "News", href: "/news" },
+    // { label: "News", href: "/news" },
   ];
 
   const footerContactInfo = [

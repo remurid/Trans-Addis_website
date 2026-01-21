@@ -7,7 +7,7 @@ export default function Services() {
     { label: "About", href: "/about-us" },
     { label: "Services", href: "/services" },
     { label: "Contact", href: "/contact-us" },
-    { label: "News", href: "/blog" },
+    // { label: "News", href: "/blog" },
   ];
 
   const socialLinks = [
