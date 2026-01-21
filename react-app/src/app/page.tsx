@@ -7,8 +7,6 @@ import Benefits from '@/components/Benefits';
 import Counter from '@/components/Counter';
 import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
-import ClientScripts from '@/components/ClientScripts';
-import { motion } from 'framer-motion';
 import HeroSlider from '@/components/HeroSlider';
 
 export default function Home() {

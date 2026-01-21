@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ClientScripts from '@/components/ClientScripts';
 
 export default function Testimonials() {
   const menuItems = [
@@ -144,7 +143,7 @@ export default function Testimonials() {
         copyrightLink="#"
         socialLinks={socialLinks}
       />
-      <ClientScripts />
+      {/* <ClientScripts /> */}
     </div>
   );
 }

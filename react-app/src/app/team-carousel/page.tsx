@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 
 const Header = dynamic(() => import('@/components/Header'), { ssr: false });
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: false });
-const ClientScripts = dynamic(() => import('@/components/ClientScripts'), { ssr: false });
+// const ClientScripts = dynamic(() => import('@/components/ClientScripts'), { ssr: false });
 
 export default function TeamCarousel() {
   const menuItems = [
@@ -172,7 +172,7 @@ export default function TeamCarousel() {
         copyrightLink="#"
         socialLinks={socialLinks}
       />
-      <ClientScripts />
+      {/* <ClientScripts /> */}
     </div>
   );
 }

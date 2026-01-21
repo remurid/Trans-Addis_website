@@ -1,5 +1,5 @@
 'use client';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import React from 'react';
 
 interface Point {
@@ -31,20 +31,20 @@ const containerVariants = {
       x: 0,
       transition: {
         duration: 1.5,    // similar to your original 2500ms (2.5s) but smoother
-        ease: [0.22, 1, 0.36, 1], // nice overshoot/cubic-bezier feel
+        ease: [0.22, 1, 0.36, 1] as [number, number, number, number], // nice overshoot/cubic-bezier feel
         delay: 0.1,       // matches your original 100ms delay
       }
     }
   };
 
-  const floatVariants = {
+ const floatVariants: Variants = {
     float: {
-      y: [0, -15, 0],   // gentle up-down floating like float-bob-x
+      y: [0, -15, 0] as [number, number, number],  // gentle up-down floating like float-bob-x
       transition: {
         duration: 6,
         repeat: Infinity,
-        repeatType: 'reverse',
-        ease: 'easeInOut'
+        repeatType: "reverse",
+        ease: "easeInOut"
       }
     }}
 

@@ -1,7 +1,6 @@
 "use client";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ClientScripts from "@/components/ClientScripts";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import AnimatedCounter from "@/components/AnimatedCounter";

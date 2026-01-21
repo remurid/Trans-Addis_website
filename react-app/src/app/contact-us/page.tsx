@@ -1,7 +1,6 @@
 "use client";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ClientScripts from "@/components/ClientScripts";
 import Link from "next/dist/client/link";
 import { motion } from "framer-motion";
 
@@ -318,7 +317,7 @@ export default function ContactUs() {
         copyrightLink="#"
         socialLinks={socialLinks}
       />
-      <ClientScripts />
+      {/* <ClientScripts /> */}
     </div>
   );
 }
