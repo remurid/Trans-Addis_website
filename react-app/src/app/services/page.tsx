@@ -189,7 +189,7 @@ export default function Services() {
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}
-        copyrightText="© Copyright 2023 by"
+        copyrightText="© Copyright 2026 by"
         copyrightLink="#"
         socialLinks={socialLinks}
       />

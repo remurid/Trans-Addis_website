@@ -105,7 +105,7 @@ const HeroSlider = () => {
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.2, duration: 1 }}
             className="main-slider-three__sub-title"
           >
             Private Jets Charters
@@ -114,7 +114,7 @@ const HeroSlider = () => {
           <motion.h2
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 1.1 }}
+            transition={{ delay: 0.4, duration: 1.1 }}
             className="main-slider-three__title"
           >
             Save Time &amp;<br />Fly with Comfort
@@ -127,8 +127,8 @@ const HeroSlider = () => {
             className="main-slider-three__btn-box"
             style={{ marginTop: '2.2rem', display: 'flex', gap: '1.5rem' }}
           >
-            <a href="/booking" className="thm-btn main-slider__btn">Book Now</a>
-            <a href="/contact-us" className="thm-btn main-slider__btn-two">Read More</a>
+            <a href="/contact-us" className="thm-btn main-slider__btn">Book Now</a>
+            <a href="/about-us" className="thm-btn main-slider__btn-two">Read More</a>
           </motion.div>
         </div>
       </section>

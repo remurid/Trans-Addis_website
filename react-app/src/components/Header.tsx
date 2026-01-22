@@ -51,6 +51,8 @@ const Header: React.FC<HeaderProps> = ({
     ? "main-header-three--home" 
     : "main-header-three--inner";
 
+  const searchButton = isHome ? "" : "white"
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -194,7 +196,7 @@ const Header: React.FC<HeaderProps> = ({
               <div className="main-menu-three__right">
                 <div className="main-menu-three__search-cart-box">
                   <div
-                    className="main-menu-three__search-box"
+                    className={`main-menu-three__search-box ${searchButton}`}
                     onClick={toggleSearch}
                   >
                     <Search className="icon" />

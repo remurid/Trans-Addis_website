@@ -5533,7 +5533,9 @@ ul {
 	display: flex;
 	align-items: center;
 }
-
+.main-menu-three__search-box.white {
+	color: #fff;
+}
 .main-menu-three__search {
 	position: relative;
 	display: flex;
