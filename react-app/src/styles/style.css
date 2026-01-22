@@ -10024,6 +10024,7 @@ ul {
 .request__input-box {
 	position: relative;
 	display: block;
+	width: 100% !important;
 }
 
 .request__input-box input[type="text"] {
@@ -10036,6 +10037,7 @@ ul {
 	color: #889f91;
 	padding: 0 30px;
 }
+
 .newsletter__input-box input[type="email"] {
 	border: 1px solid rgba(0, 0, 0, 0.4) !important;
 }
@@ -20455,7 +20457,7 @@ table.wishlist_table tbody td {
 	}
 
 	.main-slider-three__img {
-		display: none;
+		display: none !important;
 	}
 
 	.main-slider-three__btn-box {
@@ -20476,6 +20478,17 @@ table.wishlist_table tbody td {
 		padding-top: 292px;
 		padding-bottom: 200px;
 	}
+
+	/* Full cloud cover on mobile */
+  .main-slider-three {
+    min-height: 100dvh !important; /* Dynamic viewport height for mobile */
+    height: 100dvh !important;
+  }
+
+  .image-layer-three {
+    background-size: cover !important; /* Ensure full cover */
+    background-position: center center !important;
+  }
 }
 
 @media only screen and (min-width: 1450px) and (max-width: 1700px) {

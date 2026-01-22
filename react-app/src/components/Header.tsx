@@ -156,16 +156,7 @@ const Header: React.FC<HeaderProps> = ({
                     id="menu-onepage-menu-two"
                     className="main-menu__list one-page-scroll-menu"
                   >
-                    {/* {menuItems.map((item, index) => (
-                      <li
-                        key={index}
-                        className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-${
-                          index + 1324
-                        }`}
-                      >
-                        <Link href={item.href}>{item.label}</Link>
-                      </li>
-                    ))} */}
+                    
                     {menuItems.map((item, index) => {
                       const isActive = pathname === item.href;
 
@@ -183,16 +174,6 @@ const Header: React.FC<HeaderProps> = ({
                   </ul>
                 </div>
               </div>
-              {/* <div className="main-menu-three__right">
-                <div className="main-menu-three__search-cart-box">
-                  <div className="main-menu-three__search-box">
-                    <a href="#" className="main-menu-three__search search-toggler fa fa-search" onClick={toggleSearch}></a>
-                  </div>
-                  <div className="main-menu-three__cart-box">
-                    <Link href="/booking" className="main-menu-three__cart fa fa-shopping-cart"></Link>
-                  </div>
-                </div>
-              </div> */}
               <div className="main-menu-three__right">
                 <div className="main-menu-three__search-cart-box">
                   <div
@@ -242,7 +223,26 @@ const Header: React.FC<HeaderProps> = ({
               />
             </a>
           </div>
-          <div className="mobile-nav__container"></div>
+          {/* <div className="mobile-nav__container"></div> */}
+          {/* Add Menu Items to Mobile Sidebar */}
+          <div className="mobile-nav__container">
+            <ul className="main-menu__list one-page-scroll-menu">
+              {menuItems.map((item, index) => {
+                const isActive = pathname === item.href;
+
+                return (
+                  <li
+                    key={index}
+                    className={`menu-item ${
+                      isActive ? "current-menu-item" : ""
+                    }`}
+                  >
+                    <Link href={item.href} onClick={toggleMobileNav}>{item.label}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
           <ul className="mobile-nav__contact list-unstyled ml-0">
             {contactInfo.slice(1).map((info, index) => (
               <li key={index}>
@@ -293,9 +293,6 @@ const Header: React.FC<HeaderProps> = ({
         </div>
       </div>
 
-      {/* <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
-        <i className="fa fa-arrow-up"></i>
-      </a> */}
       <a
         href="#"
         onClick={scrollToTop}

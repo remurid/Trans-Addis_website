@@ -33,7 +33,7 @@ export default function AboutUs() {
     { label: "About", href: "/about-us" },
     { label: "Services", href: "/services" },
     { label: "Contact", href: "/contact-us" },
-    { label: "News", href: "/blog" },
+    // { label: "News", href: "/blog" },
   ];
 
   const socialLinks = [
@@ -185,70 +185,7 @@ export default function AboutUs() {
                   "url(/uploads/2023/01/counter-three-shape-1.png)",
               }}
             ></div>
-            {/* <div className="container">
-              <ul className="list-unstyled counter-three__list ml-0">
-                <li
-                  className="counter-three__single wow fadeInUp"
-                  data-wow-delay="100ms"
-                >
-                  <div className="counter-three__count-box count-box">
-                    <h3
-                      className="count-text"
-                      data-stop="395"
-                      data-speed="1500"
-                    >
-                      00
-                    </h3>
-                  </div>
-                  <p className="counter-three__text">Professional pilots</p>
-                </li>
-                <li
-                  className="counter-three__single wow fadeInUp"
-                  data-wow-delay="200ms"
-                >
-                  <div className="counter-three__count-box count-box">
-                    <h3
-                      className="count-text"
-                      data-stop="166"
-                      data-speed="1500"
-                    >
-                      00
-                    </h3>
-                  </div>
-                  <p className="counter-three__text">Jet airplanes</p>
-                </li>
-                <li
-                  className="counter-three__single wow fadeInUp"
-                  data-wow-delay="300ms"
-                >
-                  <div className="counter-three__count-box count-box">
-                    <h3
-                      className="count-text"
-                      data-stop="138"
-                      data-speed="1500"
-                    >
-                      00
-                    </h3>
-                  </div>
-                  <p className="counter-three__text">Directions</p>
-                </li>
-                <li
-                  className="counter-three__single wow fadeInUp"
-                  data-wow-delay="400ms"
-                >
-                  <div className="counter-three__count-box count-box">
-                    <h3
-                      className="count-text"
-                      data-stop="280"
-                      data-speed="1500"
-                    >
-                      00
-                    </h3>
-                  </div>
-                  <p className="counter-three__text">World airports</p>
-                </li>
-              </ul>
-            </div> */}
+            
             <div className="container">
                     <ul className="list-unstyled counter-two__list ml-0">
                       {counters.map((counter, index) => (

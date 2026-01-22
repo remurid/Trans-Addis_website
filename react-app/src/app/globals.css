@@ -325,3 +325,11 @@ html, body, * {
 a, button {
   cursor: pointer !important;
 }
+
+
+/*  */
+.wpcf7-form-control,
+.react-datepicker-wrapper input {
+  border: none !important; /* Remove borders */
+}
+

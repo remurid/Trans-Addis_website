@@ -95,7 +95,7 @@ const Request: React.FC<RequestProps> = ({ shape1, shape2 }) => {
                     onChange={(time: Date | null) => setFormData({ ...formData, time })}
                     showTimeSelect
                     showTimeSelectOnly
-                    timeIntervals={15}
+                    timeIntervals={30}
                     timeCaption="Time"
                     dateFormat="h:mm aa"
                     placeholderText="Select time"
