@@ -331,5 +331,40 @@ a, button {
 .wpcf7-form-control,
 .react-datepicker-wrapper input {
   border: none !important; /* Remove borders */
+  
+}
+.react-datepicker-wrapper{
+  width: 100% !important;
+}
+/*  */
+@media (max-width: 768px) {
+ 
+
+ 
+  .about-three {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+}
+@media (max-width: 768px) {
+  .about-three__experience {
+    left: -10px !important;
+    top: -10px !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .about-three__img-box {
+    margin: 0 !important;
+    display: block !important;
+    text-align: left !important;
+  }
+}
+@media (max-width: 768px) {
+  .about-three__img img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
 }
 

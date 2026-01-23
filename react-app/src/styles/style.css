@@ -19884,10 +19884,12 @@ table.wishlist_table tbody td {
 		right: 0;
 		transform: translateY(0);
 		margin-top: 15px;
+		margin-bottom: 35px;
 	}
 
 	.newsletter__right .checked-box {
 		margin-left: 0;
+		margin-top: 0 !important;
 	}
 
 	.footer-widget__Explore {
