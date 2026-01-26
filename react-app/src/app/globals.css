@@ -368,3 +368,9 @@ a, button {
   }
 }
 
+/* Hide Custom Cursor on Mobile */
+@media (max-width: 767px) {
+  .custom-cursor-container {
+    display: none !important;
+  }
+}
