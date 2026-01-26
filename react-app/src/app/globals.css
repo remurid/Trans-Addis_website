@@ -268,6 +268,7 @@ a {
     width: 100%;
     top: 0;
     left: 0;
+    
 }
 
 .main-header-three--inner .main-menu__list li a {
@@ -287,6 +288,16 @@ a {
 }
 .main-menu-three.stricky-fixed .main-menu__list li a {
     color: #171717 !important;
+}
+.main-header-three--inner .main-menu-three.stricky-fixed {
+    background-color: #123821 !important;
+    
+}
+.main-header-three--inner .main-menu-three.stricky-fixed .main-menu__list li a {
+    color: #ffffff !important;
+}
+.main-header-three--inner .main-menu-three.stricky-fixed .main-menu__list li.current-menu-item >a {
+    color: var(--jetly-base) !important; /* Gold color */
 }
 
 /*  */
@@ -313,4 +324,53 @@ html, body, * {
 }
 a, button {
   cursor: pointer !important;
+}
+
+
+/*  */
+.wpcf7-form-control,
+.react-datepicker-wrapper input {
+  border: none !important; /* Remove borders */
+  
+}
+.react-datepicker-wrapper{
+  width: 100% !important;
+}
+/*  */
+@media (max-width: 768px) {
+ 
+
+ 
+  .about-three {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+}
+@media (max-width: 768px) {
+  .about-three__experience {
+    left: -10px !important;
+    top: -10px !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .about-three__img-box {
+    margin: 0 !important;
+    display: block !important;
+    text-align: left !important;
+  }
+}
+@media (max-width: 768px) {
+  .about-three__img img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
+}
+
+/* Hide Custom Cursor on Mobile */
+@media (max-width: 767px) {
+  .custom-cursor-container {
+    display: none !important;
+  }
 }

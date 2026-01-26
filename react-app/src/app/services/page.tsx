@@ -7,7 +7,7 @@ export default function Services() {
     { label: "About", href: "/about-us" },
     { label: "Services", href: "/services" },
     { label: "Contact", href: "/contact-us" },
-    { label: "News", href: "/blog" },
+    // { label: "News", href: "/blog" },
   ];
 
   const socialLinks = [
@@ -189,7 +189,7 @@ export default function Services() {
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}
-        copyrightText="© Copyright 2023 by"
+        copyrightText="© Copyright 2026 by"
         copyrightLink="#"
         socialLinks={socialLinks}
       />

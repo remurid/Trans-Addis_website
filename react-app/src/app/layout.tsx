@@ -1,13 +1,40 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "../styles/style.css";
-import 'animate.css/animate.min.css';
+// import 'animate.css/animate.min.css';
 import CustomCursor from "@/components/CustomCursor";
 
 
+// export const metadata: Metadata = {
+//   title: "Trans Nation Airways",
+//   description: "Trans Nation Airways - Private Jet Charters",
+// };
 export const metadata: Metadata = {
+  metadataBase: new URL("https://transaddis-8rbqfkiz6-matias-ashenafis-projects.vercel.app"), // IMPORTANT
   title: "Trans Nation Airways",
   description: "Trans Nation Airways - Private Jet Charters",
+  openGraph: {
+    title: "Trans Nation Airways",
+    description: "Luxury Private Jet Charters with Trans Nation Airways",
+    url: "https://transaddis-8rbqfkiz6-matias-ashenafis-projects.vercel.app",
+    siteName: "Trans Nation Airways",
+    images: [
+      {
+        url: "/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Trans Nation Airways",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trans Nation Airways",
+    description: "Luxury Private Jet Charters with Trans Nation Airways",
+    images: ["/preview.jpg"],
+  },
 };
 
 export default function RootLayout({

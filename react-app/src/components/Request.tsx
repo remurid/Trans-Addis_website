@@ -95,7 +95,7 @@ const Request: React.FC<RequestProps> = ({ shape1, shape2 }) => {
                     onChange={(time: Date | null) => setFormData({ ...formData, time })}
                     showTimeSelect
                     showTimeSelectOnly
-                    timeIntervals={15}
+                    timeIntervals={30}
                     timeCaption="Time"
                     dateFormat="h:mm aa"
                     placeholderText="Select time"
@@ -104,9 +104,9 @@ const Request: React.FC<RequestProps> = ({ shape1, shape2 }) => {
                     calendarClassName="custom-datepicker"
                     showPopperArrow={false}
                   />
-                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                  {/* <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                     <i className="far fa-clock text-gray-500"></i>
-                  </div>
+                  </div> */}
                 </div>
               </li>
               {/* Passengers */}

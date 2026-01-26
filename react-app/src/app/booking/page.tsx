@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ClientScripts from '@/components/ClientScripts';
 
 export default function Booking() {
   const [formData, setFormData] = useState({
@@ -87,7 +86,7 @@ export default function Booking() {
 
   return (
     <div className="page-wrapper">
-      <ClientScripts />
+      {/* <ClientScripts /> */}
       <Header
         logoSrc="/uploads/2023/01/logo-dark.png"
         menuItems={menuItems}

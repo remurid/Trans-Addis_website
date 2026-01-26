@@ -7,8 +7,6 @@ import Benefits from '@/components/Benefits';
 import Counter from '@/components/Counter';
 import Newsletter from '@/components/Newsletter';
 import Footer from '@/components/Footer';
-import ClientScripts from '@/components/ClientScripts';
-import { motion } from 'framer-motion';
 import HeroSlider from '@/components/HeroSlider';
 
 export default function Home() {
@@ -17,7 +15,7 @@ export default function Home() {
     { label: 'About', href: '/about-us' },
     { label: 'Services', href: '/services' },
     { label: 'Contact', href: '/contact-us' },
-    { label: 'News', href: '/blog' },
+    // { label: 'News', href: '/blog' },
   ];
 
   const socialLinks = [
@@ -184,7 +182,7 @@ export default function Home() {
           icon="/uploads/2023/01/about-three-icon.png"
           shape="/uploads/2023/01/about-three-shape-1.png"
           buttonText="Learn More"
-          buttonHref="/about"
+          buttonHref="/about-us"
         />
 
         {/* We Fly Section */}
@@ -195,9 +193,9 @@ export default function Home() {
           count={6800}
           text="Curly Airline proudly raises the bar and exceeds the standard for luxury and corporate private jet charter services."
           button1Text="Book Now"
-          button1Href="/booking"
+          button1Href="/contact-us"
           button2Text="Read More"
-          button2Href="/destinations"
+          button2Href="/about-us"
         />
 
         {/* Services Section */}

@@ -9,9 +9,9 @@ interface AnimatedCounterProps {
   delay?: number; 
 }
 
-const AnimatedCounter = ({ end, duration = 2.5, delay = 0 }: AnimatedCounterProps) => {
+const AnimatedCounter = ({ end, duration = 2.5, delay = 5 }: AnimatedCounterProps) => {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   useEffect(() => {
     if (!isInView || !ref.current) return;
@@ -22,7 +22,7 @@ const AnimatedCounter = ({ end, duration = 2.5, delay = 0 }: AnimatedCounterProp
       ease: "easeOut",
       onUpdate: (latest) => {
         if (ref.current) {
-          ref.current.textContent = Math.round(latest).toLocaleString();
+          ref.current.textContent = Math.floor(latest).toLocaleString();
         }
       },
     });
