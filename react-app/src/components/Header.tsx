@@ -223,8 +223,6 @@ const Header: React.FC<HeaderProps> = ({
               />
             </a>
           </div>
-          {/* <div className="mobile-nav__container"></div> */}
-          {/* Add Menu Items to Mobile Sidebar */}
           <div className="mobile-nav__container">
             <ul className="main-menu__list one-page-scroll-menu">
               {menuItems.map((item, index) => {
