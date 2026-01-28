@@ -10,7 +10,6 @@ const CustomCursor = () => {
   const mousePos = useRef({ x: 0, y: 0 });
   const outerPos = useRef({ x: 0, y: 0 });
   
-  // Refs for the DOM elements
   const innerRef = useRef<HTMLDivElement>(null);
   const outerRef = useRef<HTMLDivElement>(null);
 
@@ -34,8 +33,6 @@ const CustomCursor = () => {
         setIsHovered(false);
       }
     };
-
-    // The LERP loop for the outer circle
     const render = () => {
       // Adjust the 0.15 value to change speed (0.1 = slower/more lag, 0.3 = faster)
       outerPos.current.x += (mousePos.current.x - outerPos.current.x) * 0.15;

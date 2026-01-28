@@ -68,19 +68,6 @@ const Newsletter: React.FC<NewsletterProps> = ({
                   </button>
               </form>
               <div className="mc-form__response"></div>
-              {/* <div className="checked-box">
-                <input
-                  type="checkbox"
-                  name="skipper1"
-                  id="skipper"
-                  checked={isChecked}
-                  onChange={(e) => setIsChecked(e.target.checked)}
-                />
-                <label htmlFor="skipper">
-                  <span></span>
-                  {policyText}
-                </label>
-              </div> */}
             </div>
           </div>
         </div>
