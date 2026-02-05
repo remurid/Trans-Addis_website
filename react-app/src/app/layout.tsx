@@ -6,24 +6,24 @@ import CustomCursor from "@/components/CustomCursor";
 
 
 // export const metadata: Metadata = {
-//   title: "Trans Nation Airways",
-//   description: "Trans Nation Airways - Private Jet Charters",
+//   title: "Trans Addis Airways",
+//   description: "Trans Addis Airways - Private Jet Charters",
 // };
 export const metadata: Metadata = {
   metadataBase: new URL("https://transaddis-8rbqfkiz6-matias-ashenafis-projects.vercel.app"), // IMPORTANT
-  title: "Trans Nation Airways",
-  description: "Trans Nation Airways - Private Jet Charters",
+  title: "Trans Addis Airways",
+  description: "Trans Addis Airways - Private Jet Charters",
   openGraph: {
-    title: "Trans Nation Airways",
-    description: "Luxury Private Jet Charters with Trans Nation Airways",
+    title: "Trans Addis Airways",
+    description: "Luxury Private Jet Charters with Trans Addis Airways",
     url: "https://transaddis-8rbqfkiz6-matias-ashenafis-projects.vercel.app",
-    siteName: "Trans Nation Airways",
+    siteName: "Trans Addis Airways",
     images: [
       {
         url: "/preview.jpg",
         width: 1200,
         height: 630,
-        alt: "Trans Nation Airways",
+        alt: "Trans Addis Airways",
       },
     ],
     locale: "en_US",
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Trans Nation Airways",
-    description: "Luxury Private Jet Charters with Trans Nation Airways",
+    title: "Trans Addis Airways",
+    description: "Luxury Private Jet Charters with Trans Addis Airways",
     images: ["/preview.jpg"],
   },
 };
@@ -50,6 +50,9 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/logo-simple.svg" />
+        <meta name="theme-color" content="#6fccdd" />
       </head>
       <body
         className="page-template custom-cursor page-template-elementor_header_footer page page-id-1359 theme-jetly jetly-addon woocommerce-no-js woocommerce-active elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-1359"

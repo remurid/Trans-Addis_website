@@ -48,11 +48,11 @@ const Footer: React.FC<FooterProps> = ({
               <div className="footer-widget__column footer-widget__about">
                 <div className="footer-widget__logo logo-retina">
                   <a href="/">
-                    <img loading="lazy" decoding="async" width="124" height="48" src={logoSrc} alt="Jetly" />
+                    <img loading="lazy" decoding="async" width="124" height="48" src={logoSrc || '/logo.svg'} alt="Trans Addis" />
                   </a>
                 </div>
                 <div className="footer-widget__about-text-box">
-                  <p className="footer-widget__about-text">{aboutText}</p>
+                  <p className="site-footer__bottom-text">{aboutText}</p>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ const Footer: React.FC<FooterProps> = ({
         <div className="site-footer__bottom-inner">
           <div className="site-footer__bottom-left">
             <p className="site-footer__bottom-text">
-              {copyrightText} <a href={copyrightLink}>Jetly.com</a>
+              {copyrightText} <a href={copyrightLink}>Trans Addis Airways</a>
             </p>
           </div>
           <div className="site-footer__bottom-right">

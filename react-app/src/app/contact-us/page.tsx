@@ -21,7 +21,7 @@ export default function ContactUs() {
   ];
 
   const contactInfo = [
-    { icon: "fa-map-marker", text: "30 Commercial road fratton, Australia" },
+    { icon: "fa-map-marker", text: "Addis Ababa, Ethiopia " },
     {
       icon: "fa-envelope-open",
       text: "needhelp@company.com",
@@ -56,7 +56,7 @@ export default function ContactUs() {
   return (
     <div className="page-wrapper">
       <Header
-        logoSrc="/uploads/2023/01/logo-dark.png"
+        logoSrc="/logo.svg"
         menuItems={menuItems}
         socialLinks={socialLinks}
         contactInfo={contactInfo}
@@ -98,8 +98,9 @@ export default function ContactUs() {
             <div className="section-title text-center">
               <span className="section-title__tagline">Contact us</span>
               <h2 className="section-title__title">
-                Feel free to get in touch <br /> with the jetly
+                Contact our charter specialists anytime, 24/7
               </h2>
+              <p className="section-subtitle">Reach our team by phone or email for quotes, urgent requests, and dedicated account support.</p>
             </div>
             <motion.div
               className="row"
@@ -308,8 +309,8 @@ export default function ContactUs() {
       </main>
 
       <Footer
-        logoSrc="/uploads/2023/01/logo-light.png"
-        aboutText="Private jet charters save your time and give you comfort."
+        logoSrc="/logo.svg"
+        aboutText="Trans Addis Airways provides tailored private jet charters, experienced crews, and dedicated concierge services for corporate and private clients."
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}

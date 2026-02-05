@@ -38,7 +38,7 @@ export default function Booking() {
   ];
 
   const contactInfo = [
-    { icon: 'fa-map-marker', text: '30 Commercial road fratton, Australia' },
+    { icon: 'fa-map-marker', text: 'Addis Ababa, Ethiopia ' },
     { icon: 'fa-envelope-open', text: 'needhelp@company.com', href: 'mailto:needhelp@company.com' },
   ];
 
@@ -88,7 +88,7 @@ export default function Booking() {
     <div className="page-wrapper">
       {/* <ClientScripts /> */}
       <Header
-        logoSrc="/uploads/2023/01/logo-dark.png"
+        logoSrc="/logo.svg"
         menuItems={menuItems}
         socialLinks={socialLinks}
         contactInfo={contactInfo}
@@ -326,8 +326,8 @@ export default function Booking() {
         </section>
       </main>
       <Footer
-        logoSrc="/uploads/2023/01/logo-light.png"
-        aboutText="Trans Nation Airways is your premier private jet charter service, offering luxury travel solutions worldwide with exceptional safety, comfort, and personalized service."
+        logoSrc="/logo.svg"
+        aboutText="Trans Addis Airways provides tailored private jet charters, experienced crews, and dedicated concierge services for corporate and private clients."
         socialLinks={socialLinks}
         contactInfo={footerContactInfo}
         exploreLinks={[
@@ -342,7 +342,7 @@ export default function Booking() {
           { label: 'Contact Us', href: '/contact-us' },
           { label: 'News', href: '/blog' },
         ]}
-        copyrightText="© 2024 Trans Nation Airways. All rights reserved."
+        copyrightText="© 2024 Trans Addis Airways. All rights reserved."
         copyrightLink="/"
       />
     </div>

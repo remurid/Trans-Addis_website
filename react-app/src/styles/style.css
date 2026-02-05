@@ -108,7 +108,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--jetly-primary: #f8f7f1;
 	--jetly-primary-rgb: 248, 247, 241;
 	--jetly-black: #123821;
-	--jetly-black-rgb: 18, 56, 33;
+	--jetly-black-rgb: 77, 0, 77;
 	--jetly-base: #a79132;
 	--jetly-base-rgb: 167, 145, 50;
 	--jetly-extra: #f7f5f1;
@@ -255,6 +255,39 @@ object {
 img {
 	height: auto;
 	max-width: 100%;
+}
+
+/* Responsive logo rules added for Trans Addis */
+.main-menu-three__logo img,
+.logo-box img,
+.footer-widget__logo img {
+	max-width: 220px;
+	height: auto;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.main-menu-three__logo img,
+	.logo-box img {
+		max-width: 140px;
+	}
+	.main-menu-three__logo {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.logo-simple {
+	width: 48px;
+	height: auto;
+	display: inline-block;
+}
+
+.hero .logo-overlay {
+	position: absolute;
+	left: 24px;
+	top: 24px;
+	z-index: 20;
 }
 
 figure {

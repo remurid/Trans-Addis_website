@@ -18,7 +18,7 @@ export default function Services() {
   ];
 
   const contactInfo = [
-    { icon: "fa-map-marker", text: "30 Commercial road fratton, Australia" },
+    { icon: "fa-map-marker", text: "Addis Ababa, Ethiopia " },
     {
       icon: "fa-envelope-open",
       text: "needhelp@company.com",
@@ -98,7 +98,7 @@ export default function Services() {
   return (
     <div className="site page-wrapper">
       <Header
-        logoSrc="/uploads/2023/01/logo-dark.png"
+        logoSrc="/logo.svg"
         menuItems={menuItems}
         socialLinks={socialLinks}
         contactInfo={contactInfo}
@@ -137,8 +137,7 @@ export default function Services() {
                 what we're offering
               </span>
               <h2 className="section-title__title">
-                Select the service
-                <br /> according to your work
+                Comprehensive private aviation services for every mission
               </h2>
             </div>
             <div className="row">
@@ -184,8 +183,8 @@ export default function Services() {
       </main>
 
       <Footer
-        logoSrc="/uploads/2023/01/logo-light.png"
-        aboutText="Private jet charters save your time and give you comfort."
+        logoSrc="/logo.svg"
+        aboutText="Trans Addis Airways provides tailored private jet charters, experienced crews, and dedicated concierge services for corporate and private clients."
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}

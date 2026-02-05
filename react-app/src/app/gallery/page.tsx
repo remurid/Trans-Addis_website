@@ -18,7 +18,7 @@ export default function Gallery() {
   ];
 
   const contactInfo = [
-    { icon: 'fa-map-marker', text: '30 Commercial road fratton, Australia' },
+    { icon: 'fa-map-marker', text: 'Addis Ababa, Ethiopia ' },
     { icon: 'fa-envelope-open', text: 'needhelp@company.com', href: 'mailto:needhelp@company.com' },
   ];
 
@@ -54,7 +54,7 @@ export default function Gallery() {
   return (
     <div className="site page-wrapper">
       <Header
-        logoSrc="/uploads/2023/01/logo-dark.png"
+        logoSrc="/logo.svg"
         menuItems={menuItems}
         socialLinks={socialLinks}
         contactInfo={contactInfo}
@@ -71,7 +71,8 @@ export default function Gallery() {
           <div className="main-slider-border main-slider-border-six"></div>
           <div className="container">
             <div className="page-header__inner">
-              <h2>Gallery</h2>
+              <h2>Explore our fleet, cabins, and travel experiences</h2>
+              <p className="section-subtitle">High-resolution images highlighting aircraft interiors, amenities, and VIP handling across our fleet.</p>
               <ul className="thm-breadcrumb list-unstyled">
                 <li><a href="/">Home</a></li>
                 <li><span>Gallery</span></li>
@@ -107,8 +108,8 @@ export default function Gallery() {
       </main>
 
       <Footer
-        logoSrc="/uploads/2023/01/logo-light.png"
-        aboutText="Private jet charters save your time and give you comfort."
+        logoSrc="/logo.svg"
+        aboutText="Trans Addis Airways provides tailored private jet charters, experienced crews, and dedicated concierge services for corporate and private clients."
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}

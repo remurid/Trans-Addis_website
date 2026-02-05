@@ -18,7 +18,7 @@ export default function Testimonials() {
   ];
 
   const contactInfo = [
-    { icon: 'fa-map-marker', text: '30 Commercial road fratton, Australia' },
+    { icon: 'fa-map-marker', text: 'Addis Ababa, Ethiopia ' },
     { icon: 'fa-envelope-open', text: 'needhelp@company.com', href: 'mailto:needhelp@company.com' },
   ];
 
@@ -47,7 +47,7 @@ export default function Testimonials() {
       name: "Robert Johnson",
       position: "CEO, TechCorp",
       image: "/uploads/2023/01/testimonial-1-3.jpg",
-      text: "Trans Nation Airways provided exceptional service for our executive team's travel needs. The professionalism and attention to detail exceeded our expectations.",
+      text: "Trans Addis Airways provided exceptional service for our executive team's travel needs. The professionalism and attention to detail exceeded our expectations.",
       rating: 5,
       delay: "100ms"
     },
@@ -55,7 +55,7 @@ export default function Testimonials() {
       name: "Maria Garcia",
       position: "Event Planner",
       image: "/uploads/2023/01/testimonial-1-4.jpg",
-      text: "Planning our celebrity client's private jet travel was seamless with Trans Nation Airways. Their team handled everything perfectly.",
+      text: "Planning our celebrity client's private jet travel was seamless with Trans Addis Airways. Their team handled everything perfectly.",
       rating: 5,
       delay: "200ms"
     },
@@ -63,7 +63,7 @@ export default function Testimonials() {
       name: "David Chen",
       position: "Business Owner",
       image: "/uploads/2023/01/testimonial-1-5.jpg",
-      text: "The luxury and comfort provided by Trans Nation Airways made our family vacation truly memorable. Highly recommended!",
+      text: "The luxury and comfort provided by Trans Addis Airways made our family vacation truly memorable. Highly recommended!",
       rating: 5,
       delay: "300ms"
     }
@@ -72,7 +72,7 @@ export default function Testimonials() {
   return (
     <div className="site page-wrapper">
       <Header
-        logoSrc="/uploads/2023/01/logo-dark.png"
+        logoSrc="/logo.svg"
         menuItems={menuItems}
         socialLinks={socialLinks}
         contactInfo={contactInfo}
@@ -89,7 +89,8 @@ export default function Testimonials() {
           <div className="main-slider-border main-slider-border-six"></div>
           <div className="container">
             <div className="page-header__inner">
-              <h2>Testimonials</h2>
+              <h2>What clients say about our private jet service</h2>
+              <p className="section-subtitle">Real feedback from executives and private clients who trust our safety, service and attention to detail.</p>
               <ul className="thm-breadcrumb list-unstyled">
                 <li><a href="/">Home</a></li>
                 <li><span>Testimonials</span></li>
@@ -134,8 +135,8 @@ export default function Testimonials() {
       </main>
 
       <Footer
-        logoSrc="/uploads/2023/01/logo-light.png"
-        aboutText="Private jet charters save your time and give you comfort."
+        logoSrc="/logo.svg"
+        aboutText="Trans Addis Airways provides tailored private jet charters, experienced crews, and dedicated concierge services for corporate and private clients."
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}

@@ -23,12 +23,12 @@ export default function TeamCarousel() {
   ];
 
   const contactInfo = [
-    { icon: 'fa-map-marker', text: '30 Commercial road fratton, Australia' },
+    { icon: 'fa-map-marker', text: 'Addis Ababa, Ethiopia ' },
     { icon: 'fa-envelope-open', text: 'needhelp@company.com', href: 'mailto:needhelp@company.com' },
   ];
 
   const footerContactInfo = [
-    { icon: 'fa-map-marker', text: '30 Commercial road fratton, Australia' },
+    { icon: 'fa-map-marker', text: 'Addis Ababa, Ethiopia ' },
     { icon: 'fa-envelope-open', text: 'needhelp@company.com', href: 'mailto:needhelp@company.com' },
   ];
 
@@ -117,7 +117,7 @@ export default function TeamCarousel() {
   return (
     <div className="page-wrapper">
       <Header
-        logoSrc="/uploads/2023/01/logo-light.png"
+        logoSrc="/logo.svg"
         menuItems={menuItems}
         socialLinks={socialLinks}
         contactInfo={contactInfo}
@@ -126,8 +126,8 @@ export default function TeamCarousel() {
         <section className="page-header page-header-bg">
           <div className="container">
             <div className="page-header__inner">
-              <h2>Team Carousel</h2>
-              <p>Meet our professional private jet crew</p>
+              <h2>Our crew in action and on display</h2>
+              <p className="section-subtitle">A curated gallery showcasing the professionals who deliver your private travel experience.</p>
             </div>
           </div>
         </section>
@@ -163,8 +163,8 @@ export default function TeamCarousel() {
         </section>
       </main>
       <Footer
-        logoSrc="/uploads/2023/01/logo-light.png"
-        aboutText="Private jet charters save your time and give you comfort."
+        logoSrc="/logo.svg"
+        aboutText="Trans Addis Airways provides tailored private jet charters, experienced crews, and dedicated concierge services for corporate and private clients."
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}

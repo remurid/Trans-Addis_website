@@ -18,7 +18,7 @@ export default function MusicTours() {
   ];
 
   const contactInfo = [
-    { icon: 'fa-map-marker', text: '30 Commercial road fratton, Australia' },
+    { icon: 'fa-map-marker', text: 'Addis Ababa, Ethiopia ' },
     { icon: 'fa-envelope-open', text: 'needhelp@company.com', href: 'mailto:needhelp@company.com' },
   ];
 
@@ -45,7 +45,7 @@ export default function MusicTours() {
   return (
     <div className="site page-wrapper">
       <Header
-        logoSrc="/uploads/2023/01/logo-dark.png"
+        logoSrc="/logo.svg"
         menuItems={menuItems}
         socialLinks={socialLinks}
         contactInfo={contactInfo}
@@ -62,7 +62,8 @@ export default function MusicTours() {
           <div className="main-slider-border main-slider-border-six"></div>
           <div className="container">
             <div className="page-header__inner">
-              <h2>Music Tours</h2>
+              <h2>Specialized charters for music tours and entourage travel</h2>
+              <p className="section-subtitle">Secure transport for artists, crew and equipment with customized schedules and cargo handling solutions.</p>
               <ul className="thm-breadcrumb list-unstyled">
                 <li><a href="/">Home</a></li>
                 <li><a href="/services">Services</a></li>
@@ -133,8 +134,8 @@ export default function MusicTours() {
       </main>
 
       <Footer
-        logoSrc="/uploads/2023/01/logo-light.png"
-        aboutText="Private jet charters save your time and give you comfort."
+        logoSrc="/logo.svg"
+        aboutText="Trans Addis Airways provides tailored private jet charters, experienced crews, and dedicated concierge services for corporate and private clients."
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}

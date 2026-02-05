@@ -136,9 +136,9 @@ const Header: React.FC<HeaderProps> = ({
                       decoding="async"
                       width="134"
                       height="34"
-                      src={logoSrc}
+                      src={'/logo.svg'}
                       id="thm-logo"
-                      alt="Jetly"
+                      alt="Trans Addis"
                     />
                   </Link>
                 </div>
@@ -175,20 +175,7 @@ const Header: React.FC<HeaderProps> = ({
                 </div>
               </div>
               <div className="main-menu-three__right">
-                <div className="main-menu-three__search-cart-box">
-                  <div
-                    className={`main-menu-three__search-box ${searchButton}`}
-                    onClick={toggleSearch}
-                  >
-                    <Search className="icon" />
-                  </div>
-
-                  <div className="main-menu-three__cart-box">
-                    <Link href="/booking">
-                      <ShoppingCart className="icon" />
-                    </Link>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -217,9 +204,9 @@ const Header: React.FC<HeaderProps> = ({
                 decoding="async"
                 width="134"
                 height="34"
-                src={logoSrc.replace("dark", "light")}
+                src={'/logo-simple.svg'}
                 id="mobile-thm-logo"
-                alt="Jetly"
+                alt="Trans Addis"
               />
             </a>
           </div>

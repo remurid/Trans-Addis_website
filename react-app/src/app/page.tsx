@@ -26,7 +26,7 @@ export default function Home() {
   ];
 
   const contactInfo = [
-    { icon: 'fa-map-marker', text: '30 Commercial road fratton, Australia' },
+    { icon: 'fa-map-marker', text: 'Addis Ababa, Ethiopia ' },
     { icon: 'fa-envelope-open', text: 'needhelp@company.com', href: 'mailto:needhelp@company.com' },
   ];
 
@@ -141,7 +141,7 @@ export default function Home() {
       {/* <ClientScripts /> */}
       <div data-elementor-type="wp-post" data-elementor-id="1307" className="elementor elementor-1307">
         <Header
-        logoSrc="/uploads/2023/01/logo-dark.png"
+        logoSrc="/logo.svg"
         menuItems={menuItems}
         socialLinks={socialLinks}
         contactInfo={contactInfo}
@@ -169,13 +169,12 @@ export default function Home() {
           shape1="/uploads/2023/01/request-shape-1.png"
           shape2="/uploads/2023/01/request-shape-2.png"
         />
-
         {/* About Section */}
         <About
-          title="Private jet for business and leisure purpose"
-          subtitle="What will you get"
-          textOne="Non augue egestas, commodo velit eget, vestibulum tellus.Curabitur vulputate justo elit, at elementum orci pulvinar vel."
-          textTwo="Pellentesque habitant morbi tristique. Pellentesquen habitant morbi tristique. Ut non augue egestas, commodo velit eget, vestibulum tellus."
+          title="Luxury private jet charters for discerning travelers"
+          subtitle="What we deliver"
+          textOne="Exceptional safety, personalized service, and seamless travel tailored to executives and private clients."
+          textTwo="Our cabins, catering and ground logistics are carefully coordinated to exceed expectations on every flight."
           points={aboutPoints}
           image="/uploads/2023/01/about-three-1.jpg"
           experience="25 Years Experience"
@@ -191,7 +190,7 @@ export default function Home() {
           badgeImage="/uploads/2023/01/we-fly-badge.png"
           title="We fly with you to over"
           count={6800}
-          text="Curly Airline proudly raises the bar and exceeds the standard for luxury and corporate private jet charter services."
+          text="Modern aircraft, vetted crews and global operations deliver reliable, secure travel across our worldwide network."
           button1Text="Book Now"
           button1Href="/contact-us"
           button2Text="Read More"
@@ -201,8 +200,8 @@ export default function Home() {
         {/* Services Section */}
         <Charters
           shape="/uploads/2023/01/benefits-one-shape-1.png"
-          tagline="luxury charters"
-          title="Select the charters according to your need"
+          tagline="Luxury Charters"
+          title="Select the charter that fits your mission"
           charters={charters}
         />
 
@@ -212,7 +211,7 @@ export default function Home() {
           shape="/uploads/2023/01/benefits-one-shape-2.png"
           tagline="Our Benefits"
           title="Learn more about private jet benefits"
-          text="Lorem ipsum dolor sit amet, elit. Curabitur condimentum, lacus non faucibus congue."
+          text="Save time and travel in comfort with dedicated service, direct routing and VIP handling for every journey."
           buttonText="Discover More"
           buttonHref="/services"
           benefits={benefits}
@@ -229,7 +228,7 @@ export default function Home() {
           shape1="/uploads/2023/01/newsletter-shape-1.png"
           shape2="/uploads/2023/01/newsletter-shape-2.png"
           tagline="Subscribe Now"
-          title="Want to know about our offers first?"
+          title="Receive exclusive offers and route updates"
           placeholder="Enter email address"
           buttonText="Subscribe"
           policyText="Check Policy"
@@ -238,8 +237,8 @@ export default function Home() {
 
       {/* Footer */}
       <Footer
-        logoSrc="/uploads/2023/01/logo-light.png"
-        aboutText="Private jet charters save your time and give you comfort."
+        logoSrc="/logo.svg"
+        aboutText="Trans Addis Airways provides tailored private jet charters, experienced crews, and dedicated concierge services for corporate and private clients."
         exploreLinks={exploreLinks}
         links={links}
         contactInfo={footerContactInfo}

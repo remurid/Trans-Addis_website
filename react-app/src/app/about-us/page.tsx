@@ -44,7 +44,7 @@ export default function AboutUs() {
   ];
 
   const contactInfo = [
-    { icon: "fa-map-marker", text: "30 Commercial road fratton, Australia" },
+    { icon: "fa-map-marker", text: "Addis Ababa, Ethiopia " },
     {
       icon: "fa-envelope-open",
       text: "needhelp@company.com",
@@ -85,7 +85,7 @@ export default function AboutUs() {
         className="elementor elementor-1307"
       >
         <Header
-          logoSrc="/uploads/2023/01/logo-dark.png"
+          logoSrc="/logo.svg"
           menuItems={menuItems}
           socialLinks={socialLinks}
           contactInfo={contactInfo}
@@ -149,20 +149,17 @@ export default function AboutUs() {
                       <span className="section-title__tagline">
                         About Company
                       </span>
-                      <h2 className="section-title__title">
-                        The best private jet charters
-                      </h2>
+                        <h2 className="section-title__title">
+                          Trusted experts in luxury private aviation
+                        </h2>
                     </div>
 
                     <p className="about-four__text-1">
-                      There are many variations of passage of lorem available
-                      but the majority alteration.
+                      We combine aviation expertise with bespoke hospitality to deliver seamless journeys for business and leisure clients.
                     </p>
 
                     <p className="about-four__text-2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Curabitur condimentum, lacus non faucibus congue, lectus
-                      quam viverra nulla, quis egestas neque sapien ac magna.
+                      Safety-first operations, certified crews, and personalized itineraries ensure every flight meets the highest standards.
                     </p>
 
                     <Link
@@ -321,8 +318,8 @@ export default function AboutUs() {
         </main>
 
         <Footer
-          logoSrc="/uploads/2023/01/logo-light.png"
-          aboutText="Private jet charters save your time and give you comfort."
+          logoSrc="/logo.svg"
+          aboutText="Trans Addis Airways provides tailored private jet charters, experienced crews, and dedicated concierge services for corporate and private clients."
           exploreLinks={exploreLinks}
           links={links}
           contactInfo={footerContactInfo}
